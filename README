@@ -1,4 +1,4 @@
-《分布式缓存高手课》
+《分布式缓存笔记》
 
 缓存定义：可以进行高速数据交换的存储器
 系统级缓存：硬件缓存、CPU缓存（CPU与内存之间的高速缓存L1d Cache(数据缓存) L1i Cache（指令缓存）、L2 Cache、L3 Cache）
@@ -25,4 +25,4 @@ LFU是Least Frequently Used最不经常用，淘汰一段时间内使用次数�
 持久化就是把内存数据写到磁盘中，防止服务宕机内存数据丢失。
 redis持久化机制：RDB(默认）和AOF机制
 RDB:redis DataBase 缩写快照， 按照一定时间将内存数据以照快照形式保存到磁盘中，产生数据文件 dump.rdb。
-AOF：
+AOF：持久化append only file 将redis 执行的每次写命令记录到单独的日志文件中，保存为aof文件。
